@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genshin Video Player</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+<div class="p-2">
+    <div class="form">
+        <label>URL:</label>
+        <input class="px-4 py-2 border-2 border-slate-200 outline-none w-full rounded-lg" type="text" name="video" id="" placeholder="Please enter video URL">
+        <label>Sound Video URL:</label>
+        <input class="px-4 py-2 border-2 border-slate-200 outline-none w-full rounded-lg" type="text" name="sound" id="" placeholder="Please enter sound URL">
+        <button onclick="load()" class="px-2 py-4 text-white bg-emerald-500 hover:bg-emerald-700 rounded">Load</button>
+    </div>
+    <div id="player" class="aspect-video"></div>
+    <div id="sound" class="sound hidden"></div>
+    <!-- <iframe class="aspect-video" id="disp-frame" src="https://www.youtube.com/embed/TmaAOV4SJNQ" frameborder="0"></iframe>
+    <iframe class="hidden" id="sound-frame" src="https://www.youtube.com/embed/34jc0Y4bzT0" frameborder="0" ></iframe> -->
+    <div class="my-2">
+        <!-- <button onclick="play()" class="px-2 py-4 text-white bg-emerald-500 hover:bg-emerald-700 rounded">Play</button> -->
+        <input class="px-4 py-2 border-2 border-slate-200 outline-none w-full rounded-lg" type="text" name="share" id="" placeholder="Share URL">
+    </div>
+</div>
+</body>
+</html>
