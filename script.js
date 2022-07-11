@@ -76,7 +76,7 @@ function createPlayer(vid, sid){
             'controls': 0,
           },
     }); 
-    document.querySelector('input[name=share]').value = window.location.origin + `?play&v=${vid}&s=${sid}`;
+    document.querySelector('input[name=share]').value = window.location.origin + window.location.pathname + `?play&v=${vid}&s=${sid}`;
 }
 
 function play() {
